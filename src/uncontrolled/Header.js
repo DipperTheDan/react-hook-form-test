@@ -2,7 +2,7 @@ import React from "react";
 
 export default ({ renderCount }) => (
   <>
-    <span className="counter">Controlled Render Count: {renderCount}</span>
+    <span className="counter">Uncontrolled Render Count: {renderCount}</span>
     <h1 className="h1">
       <svg
         width="40px"
@@ -53,11 +53,11 @@ export default ({ renderCount }) => (
           </g>
         </g>
       </svg>
-      React Hook Form - Controller
+      React Hook Form - Uncontrolled
     </h1>
     <p style={{ fontSize: 14, lineHeight: 1.3 }}>
-      Components that are using Controller. Render count indicate how many
-      re-renders triggered during user interaction at the form level.
+      Components that are using not using the Controller. Render count indicate
+      how many re-renders triggered during user interaction at the form level.
     </p>
   </>
 );
