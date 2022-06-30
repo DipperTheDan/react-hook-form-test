@@ -13,7 +13,7 @@ To make these comparisons as fair as possible, we will ensure that both examples
  - will be tested on the same machine (Macbook Pro 2019, i9, 16GB RAM, Mac OS BigSur v11.5.2).
  - will be tested in the same web browser (Google Chrome v101.0.4951.64 (Official Build) (x86_64)).
  - Refresh data will be based on [Chrome's network inspector in DevTools](https://developer.chrome.com/docs/devtools/network/).
- - 
+
 ## Formik
 The code used for this example can be found [here](https://codesandbox.io/s/carbon-formik-yup-latest-ctj8n).
 
@@ -35,7 +35,7 @@ The code used for this example can be found [here](https://codesandbox.io/s/carb
 - Submitting an empty form caused all components to error and it took 104.9ms to rerender the page.
 - Submitting a fully completed form caused one rerender and it took 64.1ms to rerender the page.
 - Refreshing the page causes one rerender and it took 821ms to reload the page.
-- 
+
 ## react-hook-form
 The code used for this example can be found [here](https://github.com/DipperTheDan/react-hook-form-test).
 - `Simple Select` causes one rerender `onBlur` and it took 1ms to rerender the page.
@@ -56,7 +56,7 @@ The code used for this example can be found [here](https://github.com/DipperTheD
 - Submitting an empty form caused all components to error and it took 2.9ms to rerender the page.
 - Submitting a fully completed form caused one rerender and it took 4.8ms to rerender the page.
 - Refreshing the page causes one rerender and it took 667ms to reload the page.
-- 
+
 ## Conclusion
 
 The rerender count was roughly the same across the two packages (Formik: 24, react-hook-form: 19) except `Radio Group`, `Button Group` and `Simple Color Picker` in `Formik`. These three components rerendered on every `click` of a `radio button`, `button` or `color` in `Formik` compared with `react-hook-form` which only triggered a rerender when the group as a whole lost focus. This meant that rerenders only happened when `onBlur` was fired, thus proving itself to be more efficient.
