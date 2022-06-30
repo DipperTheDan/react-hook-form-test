@@ -1,4 +1,4 @@
-## Testing Carbon's input components with react-hook-form
+# Testing Carbon's input components with react-hook-form
 
 This repo was created for the sole purpose of testing the compatibility and performance of Carbon's input components  with the `react-hook-form` package.
 
